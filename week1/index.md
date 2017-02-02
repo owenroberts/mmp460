@@ -1,6 +1,6 @@
 ---
 ---
-#The Portfolio
+# The Portfolio
 
 Every designer, developer and multimedia artist needs a strong portfolio representing their work.
 
