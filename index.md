@@ -1,4 +1,5 @@
 ---
+layout: default
 ---
 # MMP 460
 
@@ -22,7 +23,7 @@ This is the [class syllabus](https://docs.google.com/document/d/13aivxlj8d2MCoXd
 ## Schedule
 
 ### Week 1
-- [Introduction to the Portfolio](/week1/)
+- [Introduction to the Portfolio](week1/)
 - Assignment: Present a portfolio
 	- Research a design portfolio that you like from a professional graphic designer or artist, or another portfolio that fits the format (email me for approval).  Present the work in the portfolio, and how the design of the portfolio reinforces the work being presented.
 	- Describe **5** things about the portfolio you **like**.
