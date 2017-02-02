@@ -16,7 +16,7 @@ This is the [class syllabus](https://docs.google.com/document/d/13aivxlj8d2MCoXd
 - Intructor: Owen Roberts
 - Email: oroberts AT bmcc DOT cuny  DOT edu
 - Office: S622C (this may change soon)
-- Office ext: 8057
+- Office extension: 8057
 - Office hours: Monday 4pm - 5pm / Thursday 4pm - 6pm
 - Class times: Tuesday/Thursday 7:10pm - 9:25pm
 
@@ -24,8 +24,11 @@ This is the [class syllabus](https://docs.google.com/document/d/13aivxlj8d2MCoXd
 
 ### Week 1
 - [Introduction to the Portfolio](week1/)
-- Assignment: Present a portfolio
+- Assignment 1: Present a portfolio
 	- Research a design portfolio that you like from a professional graphic designer or artist, or another portfolio that fits the format (email me for approval).  Present the work in the portfolio, and how the design of the portfolio reinforces the work being presented.
 	- Describe **5** things about the portfolio you **like**.
 	- Describe **5** things you **don't like**.
 	- Create a blog entry with overview, 5 likes, 5 dislikes and screen captures of these details to present to the class.
+- In class: Partner story telling game
+- Set up Slack
+- Go over syllabus

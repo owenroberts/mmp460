@@ -6,6 +6,7 @@ layout: default
 Every designer, developer and multimedia artist needs a strong portfolio representing their work.
 
 Within this list of examples, pay attention to how different types of creatives use their portfolio to reflect the quality and style of work they do:
+
 - <a href="http://www.jlmadison.com/index.html" target="blank">http://www.jlmadison.com/index.html</a> 
 - <a href="https://www.joycegrace.ca/" target="blank">https://www.joycegrace.ca/</a> 
 - <a href="http://weareadaptable.com/" target="blank">http://weareadaptable.com/</a> 
