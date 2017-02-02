@@ -13,7 +13,7 @@ This is the [class syllabus](https://docs.google.com/document/d/13aivxlj8d2MCoXd
 
 ## Spring 2017 - Section 1900
 
-- Intructor: Owen Roberts
+- Instructor: Owen Roberts
 - Email: oroberts AT bmcc DOT cuny  DOT edu
 - Office: S622C (this may change soon)
 - Office extension: 8057
