@@ -3,7 +3,7 @@ layout: default
 ---
 # MMP 460
 
-This is the class page from MMP 460 at BMCC.
+This is the class page of MMP 460 at BMCC.
 
 The class notes, schedule and assignments are all found here.
 
