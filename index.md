@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# MMP 460
+# MMP 460: Multimedia Project Lab
 
 This is the class page of MMP 460 at BMCC.
 
@@ -24,6 +24,7 @@ This is the <a href="https://docs.google.com/document/d/13aivxlj8d2MCoXdHxW_J4np
 
 - Assignments are due the night before class
 - DM @owen a URL to the assignment on your blog, WordPress or GitHub
+- Late assignments are automatic 20 points off
 
 # Schedule
 
@@ -39,3 +40,25 @@ This is the <a href="https://docs.google.com/document/d/13aivxlj8d2MCoXdHxW_J4np
 - Set up Slack
 - Go over syllabus
 - Make a WordPress.com blog
+
+### Week 2
+- Present Portfolio design critiques
+- Set up GitHub accounts
+- Tech portfolios
+- Assignment 2: Portfolio planning
+	- Due **Monday, February 13**
+	- Create a post with the basics of your portfolio
+	- Description of the kind of portfolio you will create
+	- Bio
+	- Sitemap [example](week2/sitemap.jpg)
+	- Sketch of the site front page 
+		- [Guide to wireframing](http://sixrevisions.com/user-interface/website-wireframing/)
+		- [Wireframe sketches](https://webdesignledger.com/18-great-examples-of-sketched-ui-wireframes-and-mockups/)
+- [Build a portfolio when you're new to tech](https://skillcrush.com/2015/03/12/impressive-tech-portfolio/)
+
+<!-- 
+https://github.com/owenroberts/gitclass
+https://education.github.com/git-cheat-sheet-education.pdf
+https://recompilermag.com/issues/issue-1/how-to-teach-git/
+ -->
+
