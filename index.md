@@ -43,6 +43,7 @@ This is the <a href="https://docs.google.com/document/d/13aivxlj8d2MCoXdHxW_J4np
 
 ### Week 2
 - Present Portfolio design critiques
+	- [notes]
 - Set up GitHub accounts
 - Tech portfolios
 - Assignment 2: Portfolio planning
