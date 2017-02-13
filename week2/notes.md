@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+[Home]({{site.github.url}}) > [Week 2]({{site.github.url}}/schedule.html#week-2)
 
 ## Good design choices
 - Organized work
