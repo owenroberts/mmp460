@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 # MMP 460: Multimedia Project Lab
 
@@ -43,8 +43,8 @@ This is the <a href="https://docs.google.com/document/d/13aivxlj8d2MCoXdHxW_J4np
 
 ### Week 2
 - Present Portfolio design critiques
-	- [notes]
-- Set up GitHub accounts
+	- [Notes](week2/notes)
+- [Set up GitHub accounts](week2/github.html)
 - Tech portfolios
 - Assignment 2: Portfolio planning
 	- Due **Monday, February 13**

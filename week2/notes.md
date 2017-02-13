@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 ## Good design choices
 - Organized work
   - Grid of images
