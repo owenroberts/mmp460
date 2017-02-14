@@ -22,7 +22,7 @@ layout: page
 ## Week 2
 - Present Portfolio design critiques
 	- [Notes](week2/notes)
-- [Set up GitHub accounts](week2/github.html)
+- Set up GitHub accounts
 - Tech portfolios
 - Assignment 2: Portfolio planning
 	- Due **Monday, February 13**
@@ -37,7 +37,7 @@ layout: page
 
 ## Week 3
 - Present Portfolio Planning
-- GitHub collaboration exercise
+- [GitHub collaboration exercise](week3/github.html)
 - WordPress pages, posts and categories
 - Assignment 3: WordPress.com blog portfolio
 	- Implement your Portfolio plan using a WordPress.com blog
