@@ -6,7 +6,7 @@ layout: page
 [Home]({{site.github.url}}/) [Schedule]({{site.github.url}}/schedule.html)
 
 
-### Week 1
+## Week 1
 - Notes: [Introduction to the Portfolio](week1/)
 - Assignment 1: Present a portfolio
 	- Due **Monday, Febuary 6**
@@ -19,7 +19,7 @@ layout: page
 - Go over syllabus
 - Make a WordPress.com blog
 
-### Week 2
+## Week 2
 - Present Portfolio design critiques
 	- [Notes](week2/notes)
 - [Set up GitHub accounts](week2/github.html)
@@ -34,6 +34,18 @@ layout: page
 		- [Guide to wireframing](http://sixrevisions.com/user-interface/website-wireframing/)
 		- [Wireframe sketches](https://webdesignledger.com/18-great-examples-of-sketched-ui-wireframes-and-mockups/)
 - [Build a portfolio when you're new to tech](https://skillcrush.com/2015/03/12/impressive-tech-portfolio/)
+
+## Week 3
+- Present Portfolio Planning
+- GitHub collaboration exercise
+- WordPress pages, posts and categories
+- Assignment 3: WordPress.com blog portfolio
+	- Implement your Portfolio plan using a WordPress.com blog
+	- Create a front page with your intro/bio or a grid of work images
+	- Add at least three projects to the portfolio as single posts
+	- Create categories for you posts
+	- Create a menu to organize your content
+
 
 <!-- 
 https://github.com/owenroberts/gitclass
