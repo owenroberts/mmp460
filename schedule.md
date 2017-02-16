@@ -38,7 +38,7 @@ layout: page
 ## Week 3
 - Present Portfolio Planning
 - [GitHub collaboration exercise](week3/github.html)
-- WordPress pages, posts and categories
+- [WordPress pages, posts, categories, menus](week3/wordpress.html)
 - Assignment 3: WordPress.com blog portfolio
 	- Implement your Portfolio plan using a WordPress.com blog
 	- Create a front page with your intro/bio or a grid of work images

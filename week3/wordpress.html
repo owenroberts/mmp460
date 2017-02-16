@@ -1,0 +1,113 @@
+---
+layout: slides
+---
+
+<div class="slide">
+	<h1>WordPress: pages, posts, categories, menus</h1>
+	<p><a href="{{site.github.url}}/">MMP 460</a> > <a href="{{site.github.url}}/schedule.html#week-3">Week 3</a></p>
+</div>
+
+<div class="slide">
+	<p>When you go to the WordPress Admin page you will the Dashboard where you can create content and change the settings of your WordPress site.</p>
+	<pre><code>&lt;blogname&gt;.wordpress.com/wp-admin</code></pre>
+	<img src="wordpress/dashboard.png" alt="">
+	<p>Today we're going to talk about the two basic types of documents that can be created on your site: Pages and Posts.</p>
+</div>
+
+<div class="slide">
+	<h2>Page</h2>
+	<p>A page is a simple static page of information that can include HTML markup, text and media.</p>
+	<p>The best example of a page is the About page, or a Biography page.  You may also have a Links page, on FAQ or other single pages depending on your site.</p>
+	<p>Pages have a custom URL that does not include the date that the page was published:</p>
+	<pre><code>&lt;blogname&gt;.wordpress.com/about/
+&lt;blogname&gt;.wordpress.com/my-biography/</code></pre>
+	<p>Pages are no included in the RSS feed of the blog or recent posts.  Navigation widgets that include pages can be added.</p>
+</div>
+
+<div class="slide">
+	<p>A new Page can be created using the Page section of the Dashboard menu:</p>
+	<img src="wordpress/page-menu.png" alt="">
+</div>
+
+<div class="slide">
+	<p>This will bring you to the standard WordPress WYSIWYG editor.  WYSIWYG stands for What You See Is What You Get which is saying that instead of writing HTML formatting, you can use the style menu buttons to style the text and it will show the result.</p>
+	<img src="wordpress/about.png" alt="">
+</div>
+
+<div class="slide">
+	<p>You can toggle the Text button to edit HTML:</p>
+	<img src="wordpress/html.png" alt="">
+</div>
+
+<div class="slide">
+	<p>Once you have finished editing your page you can make it live using the Publish menu:</p>
+	<img src="wordpress/publish.png" alt="">
+</div>
+
+<div class="slide">
+	<h2>Post</h2>
+	<p>The process of writing a post is very similar to the process of a Page, but posts have some key differences.</p>
+	<p>Posts are entries that are listed in reverse chronological order like a typical blog or Twitter feed.  Posts are displayed in the blog's RSS feed and they are dated with the time they were created:</p>
+	<pre><code>&lt;blogname&gt;.wordpress.com/2017/02/14/my-post/
+&lt;blogname&gt;.wordpress.com/2017/02/15/my-work/</code></pre>
+</div>
+
+<div class="slide">
+	<p>Add a Post with the Post menu or the Write button:</p>
+	<img src="wordpress/post-menu.png" alt="">
+	<img src="wordpress/write.png">
+</div>
+
+<div class="slide">
+	<p>Posts can have Categories, which are a useful way to organize and classify your posts.</p>
+	<img src="wordpress/categories.png" alt="">
+	<p>Categories should be used to specify large categories within your site.  For a blog this might be different posts about things you read vs code you are writing.  For a portfolio site this might be categories like "Illustration", "Front end development" or "2D design".</p>
+</div>
+
+<div class="slide">
+	<p>Posts can also have Format, another way to categorize:</p>
+	<img src="wordpress/format.png" alt="">
+	<p>Formats describe the type of content in the post, like a video, image, quotation or text.</p>
+</div>
+
+<div class="slide">
+	<p>Posts can also have tags:</p>
+	<img src="wordpress/tags.png" alt="">
+	<p>Tags can be used to further describe the content of the post based on common themes.  You might have a post tagged with "iOS" and "design" and another post tagged with "design" and "CSS".</p>
+</div>
+
+<div class="slide">
+	<h2>Media</h2>
+	<p>You can add Media such as images, audio and video into your post using the Add Media button or just dragging onto the Visual editor:</p>
+	<img src="wordpress/media.png" alt="">
+</div>
+
+<div class="slide">
+	<p>You can edit the media with the WYSIWYG editor:</p>
+	<img src="wordpress/image.png" alt="">
+	<p>External media like YouTube videos can be added by simply copying and pasting a URL into the editor:</p>
+</div>
+
+<div class="slide">
+	<h2>Menus</h2>
+	<p>Menus are used to organize your content and allow the user to navigate your website.</p>
+	<p>Menus are found under the Appearance menu:</p>
+	<img src="wordpress/appearance-menu.png" alt="">
+</div>
+
+<div class="slide">
+	<p>You can add Pages, Posts, Custom Links and Categories to the menu:</p>
+	<img src="wordpress/create-menu.png" alt="">
+	<p>Each item will natigate to different types of pages.  The Categories page will return a list of Post entries in a specific category.</p>
+</div>
+
+<div class="slide">
+	<p>You can create multiple menus with different links to place in different parts of the sites.  Each WordPress theme will give you access to a different set of menus.</p>
+	<img src="wordpress/menu-locations.png" alt="">
+</div>
+
+<div class="slide">
+	<h2>Organizing your portfolio content</h2>
+	<p>When you look at your site map, any page that is on it's own branch should most likely be a Page.  Anything that has multiple pages in one branch should be a category with multiple posts.</p>
+	<img src="wordpress/sitemap.jpg" alt="">
+</div>
