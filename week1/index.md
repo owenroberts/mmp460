@@ -2,7 +2,7 @@
 layout: page
 ---
 # The Portfolio
-[Home]({{site.github.url}}) > [Week 1]({{site.github.url}}/schedule.html#week-1)
+[Home]({{site.github.url}}/) > [Week 1]({{site.github.url}}/schedule.html#week-1)
 
 Every designer, developer and multimedia artist needs a strong portfolio representing their work.
 
