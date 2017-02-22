@@ -1,0 +1,121 @@
+---
+layout: slides
+---
+
+<div class="slide">
+	<h1>Introducing Git and GitHub</h1>
+	<p><a href="{{site.github.url}}/">MMP 460</a> > <a href="{{site.github.url}}/schedule.html#week-2">Week 2</a></p>
+</div>
+
+<div class="slide">
+	<h2>What is <a href="https://git-scm.com/" target="blank">Git</a>?</h2>
+	<ul>
+		<li>Source code management system</li>
+		<li>Distributed version control system</li>
+		<li>A collaboration tool for developers</li>
+		<li>"Version control" means it keeps track of the changes and contributions to a code base or set of files</li>
+		<li>"Distributed" means all users have a copy of the code repository</li>
+	</ul>
+</div>
+
+<div class="slide">
+	<h2>What is <a href="https://github.com/" target="blank">GitHub</a>?</h2>
+	<ul>
+		<li>Hosting for git repositories</li>
+		<li>Social network for code</li>
+	</ul>
+</div>
+
+<div class="slide">
+	<h2>Where is Git?</h2>
+	<p>Git is a group of files that are hidden on your computer.</p>
+	<img src="git/hiddenfiles.png" alt="">
+	<p>When you create a new Git repository, Git will create a <code>.git</code> folder, which is hidden by default.  So you don't have to think about Git when you're looking at your project, but you know it's there. A set of files is referred to as a <code>repo</code> or <code>repository</code>.</p>
+</div>
+
+<div class="slide">
+	<h2>How to use Git?</h2>
+	<ul>
+		<li>Git is written to be used on the Linux command line, but because it is free and open source there are tools like GitHub that use interfaces to interact with git.</li>
+		<li>Command line requires learning a little Unix but it's typically the best and most efficient way to interact with Git.  It's also the only way to access all of Git's features.</li>
+		<li>GitHub's web interface allows the user to download, upload and edit code as well as forking and branching.</li>
+		<li>GitHub's desktop client is a GUI interface for Git that is a little limited but can be a good place to start for visual learners</li>
+	</ul>
+</div>
+
+<div class="slide">
+	<h2>Command line basics</h2>
+	<img src="" alt="terminal image">
+	<ul>
+		<li><a href="https://files.fosswire.com/2007/08/fwunixref.pdf" target="blank">Unix cheat sheet </a></li>
+		<li><a href="https://ss64.com/osx/" target="blank">Full reference </a></li>
+	</ul>
+	
+	
+</div>
+
+<div class="slide">
+	<h2>Essential Unix commands</h2>
+	<table>
+		<tr>
+			<th>Command</th>
+			<th>Function</th>
+			<th>Examples</th>
+		</tr>
+		<tr>
+			<td>cd &lt;path&gt;</td>
+			<td>change directory</td>
+			<td>cd ~/Desktop <br>
+			cd ~/Desktop/my-project <br>
+			cd ..</td>
+		</tr>
+		<tr>
+			<td>ls &lt;path&gt;</td>
+			<td>list contents of directory</td>
+			<td>ls <br>
+			ls -l <br>
+			ls /Applications/</td>
+		</tr>
+		<tr>
+			<td>mkdir</td>
+			<td>make a new directory</td>
+			<td>mkdir my-project</td>
+		</tr>
+		<tr>
+			<td>touch</td>
+			<td>create a file</td>
+			<td>touch index.html<br>
+			touch css/style.css</td>
+		</tr>
+		<tr>
+			<td>rm</td>
+			<td>remove a file<br>
+			note: file does <strong>not</strong> go to trash. <br> 
+			it's gone forever.</td>
+			<td>rm my-project/file.txt</td>
+		</tr>
+		<tr>
+			<td>cp &lt;path&gt; &lt;path&gt;</td>
+			<td>copy a file</td>
+			<td>cp ~/Desktop/my-project/css/style.css css/style.css</td>
+		</tr>
+		<tr>
+			<td>mv</td>
+			<td>move a file</td>
+			<td>cp ~/Downloads/file.txt my-project/file.txt</td>
+		</tr>
+	</table>
+</div>
+
+		
+<!-- 
+what is git
+what is github
+how to init, pull, push
+how to add, commit
+remotes
+git hell
+unix cheat sheet https://files.fosswire.com/2007/08/fwunixref.pdf
+full reference https://ss64.com/osx/
+windows version!
+-->
