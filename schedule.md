@@ -49,7 +49,7 @@ layout: page
 ## Week 4
 - Present WordPress.com Portfolio
 - [WordPress server installs](week4/wp.html)
-- WordPress themes
+- [WordPress themes](week4/)
 - Midterm Overview: Portfolio
 	- There are two components to this project:
 		1. Install a WordPress theme

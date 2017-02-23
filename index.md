@@ -17,7 +17,7 @@ This is the <a href="https://docs.google.com/document/d/13aivxlj8d2MCoXdHxW_J4np
 
 - Instructor: Owen Roberts
 - Email: oroberts AT bmcc DOT cuny  DOT edu
-- Office: S622C (this may change soon)
+- Office: S622J
 - Office extension: 8057
 - Office hours: Monday 4pm - 5pm / Thursday 4pm - 6pm
 - Class times: Tuesday/Thursday 7:10pm - 9:25pm
