@@ -138,10 +138,11 @@ Remember the URL of that page because this is how you will log in to WordPress i
 
 It should be: **wpmmp.bmcc.cuny.edu/~yourusername/portfolio/wp-admin**
 
-Don't forget the tilde `**~**` before your username.
+Don't forget the tilde **`~`** before your username.
 
 Note that we will now be editing WordPress both online and from the files on your machine.  Use the online portal to add content, media, menus and categories.  We will use the files on our local drives to edit the theme of our portfolios.
-<!-- 
+
+<!---
 **Edit**:
 
 The may be an error with the WordPress servers which prevents uploading new content and themes through the Dashboard.
@@ -180,5 +181,5 @@ Open **wp-admin** on the remote site and upload the file again.
 <img src="wp/ini2.png" />
 
 That’s it.  You will now be able to use the Dashboard, upload media, add new themes, and begin to develop your WordPress blog. 
--->
+--->
 
