@@ -1,0 +1,90 @@
+---
+layout: slides
+---
+
+<div class="slide">
+	<h1>WordPress Header</h1>
+	<p><a href="{{site.github.url}}/">MMP 460</a> > <a href="{{site.github.url}}/schedule.html#week-5">Week 5</a></p>
+</div>
+
+<div class="slide">
+	<p>Today we’re going to continue looking at the themestarter files and talking about PHP concepts, looking at <code>header.php</code>.</p>
+	<p>header.php contains the <code>&lt;head&gt;</code> section and, the site title, description, main page container, and main navigation menu.  Depending on the structure of your portfolio this section may have other elements, like an image or logo, so it will change with the site design.</p>
+	<p>The <code>&lt;head&gt;</code> section is necessary, as the header is the first thing loaded into each page as it is rendered in the browser, and the head contains things like the doctype declaration and stylesheet.  However, there are some things we can remove to simplify the header.</p>
+</div>
+
+<div class="slide">
+	<p>All of the underscores templates will begin with a <code>php</code> comment explaining the purpose of the template.</p>
+	<pre><code>&lt;?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the &lt;head&gt; section and everything up until &lt;div id="content"&gt;
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package portfolio
+ */
+
+?&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>The <code>&lt;head&gt;</code> section of the HTML is inside the <code>header.php</code> file.  There are some basic <code>php</code> statements in here that we can look at but we don't need to do much here.</p>
+	<pre><code>&lt;head&gt;
+&lt;meta charset="&lt;?php bloginfo( 'charset' ); ?&gt;"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;link rel="profile" href="http://gmpg.org/xfn/11"&gt;
+&lt;?php wp_head(); ?&gt;
+&lt;head&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>After <code>&lt;head&gt;</code> we have the <code>&lt;body&gt;</code> and site containter:</p>
+	<pre><code>&lt;body &lt;?php body_class(); ?&gt;&gt;
+&lt;div id="page" class="site"&gt;</code></pre>
+	<p>We can add <code>.site</code> to <code>style.css</code> to add some basic page styles.</p>
+</div>
+
+<div class="slide">
+	<p>Notice that <code>&lt;?php body_class(); ?&gt;</code> actually generates the class names for the body section.  When the site is generated that turns into <code>&lt;body class="home blog hfeed"&gt;</code></p>
+	<p>We can also add <code>.home</code> or <code>.blog</code> into the style page to specifically style this page.</p>
+</div>
+
+<div class="slide">
+	<p>The end of the <code>header.php</code> is the beginning of the page content:</p>
+	<pre><code>&lt;div id="content" class="site-content"&gt;</code></pre>
+	<p>Let's add <code>.site-content</code> in the <code>style.css</code> file and add some styles for the content of the page.
+</div>
+
+<div class="slide">
+	<p><code>header.php</code> also contains the main title for the site and the site description that is sourced from WordPress.  The site description could be a good place for your bio, but you may not need a site description.  The title and description are contained in the <code>.site-branding</code> section:</p>
+	<pre><code>&lt;div class="site-branding"&gt;
+&lt;?php
+if ( is_front_page() && is_home() ) : ?&gt;
+	&lt;h1 class="site-title"&gt;&lt;a href="&lt;?php echo esc_url( home_url( '/' ) ); ?&gt;" rel="home"&gt;&lt;?php bloginfo( 'name' ); ?&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;?php else : ?&gt;
+	&lt;p class="site-title"&gt;&lt;a href="&lt;?php echo esc_url( home_url( '/' ) ); ?&gt;" rel="home"&gt;&lt;?php bloginfo( 'name' ); ?&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;?php
+endif;
+
+$description = get_bloginfo( 'description', 'display' );
+if ( $description || is_customize_preview() ) : ?&gt;
+	&lt;p class="site-description"&gt;&lt;?php echo $description; /* WPCS: xss ok. */ ?&gt;&lt;/p&gt;
+&lt;?php
+endif; ?&gt;
+&lt;/div&gt;&lt;!-- .site-branding --&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>Finally, the <code>header.php</code> section loads the main navigation menu into the page.  This is also something that you may change depending on the design of your site, but if you have a navigation menu in the header of your page, this is where it would be build.</p>
+	<pre><code>&lt;nav id="site-navigation" class="main-navigation" role="navigation"&gt;
+	&lt;button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"&gt;&lt;?php esc_html_e( 'Primary Menu', 'portfolio' ); ?&gt;&lt;/button&gt;
+	&lt;?php wp_nav_menu( array( 'theme_location' =&gt; 'menu-1', 'menu_id' =&gt; 'primary-menu' ) ); ?&gt;
+&lt;/nav&gt;&lt;!-- #site-navigation --&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>The main things to look for here are the <code>'menu-id'</code> parameter, which is how you assign which menu to add here, and the <code>'theme_location'</code> which tells WordPress which part of the theme this is and what menu to look for.</p>
+</div>
+

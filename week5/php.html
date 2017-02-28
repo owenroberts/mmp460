@@ -1,0 +1,56 @@
+---
+layout: slides
+---
+
+<div class="slide">
+	<h1>php basics</h1>
+	<p><a href="{{site.github.url}}/">MMP 460</a> > <a href="{{site.github.url}}/schedule.html#week-5">Week 5</a></p>
+</div>
+
+<div class="slide">
+	<p>Now that we have looked at the structure of <code>header.php</code> let's take a closer look at how php works</p>
+</div>
+
+<div class="slide">
+	<p>php is a programming language that can be embedded into an HTML template using special <code>&lt;?php ?&gt;</code> tags.</p>
+	<p>This allows developers to infuse dynamic content into a static template.  Instead of hard coding everything that appears on the page, the php scripts can be used to load content specific to various parts of your website.</p>
+</div>
+
+<div class="slide">
+	<pre><code>&lt;?php PHP_code_goes_here ?&gt;</code></pre>
+	<p>A simple line of php looks like this.  All of the code for this line must go between the open and close brackets.  However, you can add multiple lines of php inside the brackets, and multiple php tags in your page.</p>
+</div>
+
+<div class="slide">
+	<p>php supports basic programming functions and operations and has special commands:</p>
+	<pre><code>// echo will write text into the html document
+&lt;?php echo "hello world" ?&gt;
+&lt;?php echo 2 + 2 ?&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>php supports variables with the <code>$</code> declaration.</p>
+	<pre><code>&lt;?php $message = "hello world!" ?&gt;
+&lt;?php echo $message ?&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>Multiple lines of php inside one tag must be separated by a semi-colon <code>;</code> like most programming languages.</p>
+	<pre><code>&lt;?php 
+$message = "hello world!";
+echo $message; 
+?&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>php has to be run on a server so in order to test we can use a <a href="http://phptester.net/" target="blank">php console</a>.</p>
+</div>
+
+<div class="slide">
+	<p>Let's look at some of the lines of php in our theme starter.</p>
+	<pre><code>&lt;meta charset="&lt;?php bloginfo( 'charset' ); ?&gt;"&gt;</code></pre>
+	<p>In this line, <code>bloginfo()</code> is a php function that takes a parameter or argument, which is <code>'charset'</code>.  It uses this argument to return some data saved in WordPress.</p>
+	<p>It's used again in the site branding section with different arguments:</p>
+	<pre><code>&lt;?php bloginfo( 'name' ); ?&gt;</code></pre>
+</div>
+
