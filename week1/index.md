@@ -1,5 +1,7 @@
 ---
 layout: page
+title: MMP460 - Week 1
+dek: The Portfolio
 ---
 # The Portfolio
 [Home]({{site.github.url}}/) > [Week 1]({{site.github.url}}/schedule.html#week-1)

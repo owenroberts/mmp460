@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: default
+title: MMP 460 - Home
+dek: MMP 460 class notes, schedule and assignments
 ---
 # MMP 460: Multimedia Project Lab
 

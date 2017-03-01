@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: default
+title: MMP 460 - Schedule
+dek: MMP 460 Class schedule, with notes and assignments
 ---
 # Schedule
 

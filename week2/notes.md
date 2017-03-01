@@ -1,5 +1,7 @@
 ---
 layout: page
+title: MMP 460 - Week 2
+dek: Class notes
 ---
 [Home]({{site.github.url}}/) > [Week 2]({{site.github.url}}/schedule.html#week-2)
 

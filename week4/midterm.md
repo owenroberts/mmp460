@@ -1,5 +1,7 @@
 ---
 layout: page
+title: MMP 460 - Midterm 
+dek: Midterm outline
 ---
 # Midterm
 

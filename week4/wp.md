@@ -1,5 +1,7 @@
 ---
 layout: page
+title: MMP 460 - Week 4
+dek: Setting up WP servers and MySQL database
 ---
 # Setting up WP servers and MySQL database
 [Home]({{site.github.url}}/) > [Week 4]({{site.github.url}}/schedule.html#week-4)
