@@ -56,6 +56,8 @@ layout: page
 - [WordPress header](week5/)
 - [php basics](week5/php.html)
 - [Code Academy Introduction to PHP](https://www.codecademy.com/en/courses/web-beginner-en-StaFQ/1/1)
+- [WordPress Loop, page & single](week5/loop.html)
+- [WordPress Codex](https://codex.wordpress.org/)
 
 <!-- 
 https://github.com/owenroberts/gitclass

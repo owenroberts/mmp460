@@ -1,0 +1,126 @@
+---
+layout: slides
+title: MMP 460 - Week 5
+dek: WordPress Loop, single.php, page.php
+---
+<div class="slide">
+	<h1>WordPress Loop, single.php, page.php</h1>
+	<p><a href="{{site.github.url}}/">MMP 460</a> > <a href="{{site.github.url}}/schedule.html#week-5">Week 5</a></p>
+</div>
+
+<div class="slide">
+	<h2>WordPress Loop</h2>
+	<p>The WordPress loop is the fundamental way content is loaded into our webpages.  It iterates through available content and makes it available to the template code.  This makes it easy to customize the content we create in the WordPress CMS to fit our theme and design.</p>
+	<p><a href="https://codex.wordpress.org/The_Loop" target="blank">WordPress Codex: Loop</a>
+</div>
+
+<div class="slide">
+	<p>Let's take a look at the WordPress loop in our theme.  We'll look at <code>page.php</code> first, which is the template used to build the main pages of the site.</p>
+	<pre><code>&lt;div id="primary" class="content-area"&gt;
+	&lt;main id="main" class="site-main" role="main"&gt;
+
+		&lt;?php
+		while ( have_posts() ) : the_post();
+
+			get_template_part( 'template-parts/content', 'page' );
+
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+
+		endwhile; // End of the loop.
+		?&gt;
+
+	&lt;/main&gt;&lt;!-- #main --&gt;
+&lt;/div&gt;&lt;!-- #primary --&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<pre><code>while ( have_posts() ) : the_post();
+endwhile; // End of the loop.</code></pre>
+	<p>These two lines are the main part of the loop.  Basically what this does is say: "While there are posts to load, go through each post, make a new section of the web page, and add the content for that post.  We don't have to change anything her.  What we need to look at is the way the content is being loaded.</p>
+</div>
+
+<div class="slide">
+	<pre><code>get_template_part( 'template-parts/content', 'page' );</code></pre>
+	<p>This line loaded a specific template part, which is used in multiple templates, to populate the content of the site.  Let's take a look at the template in <code>template-parts/content.php</code>:</p>
+</div>
+
+<div class="slide">
+	<pre><code>&lt;?php
+/**
+ * Template part for displaying posts
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package portfolio
+ */
+
+?&gt;
+
+&lt;article id="post-&lt;?php the_ID(); ?&gt;" &lt;?php post_class(); ?&gt;&gt;
+	&lt;header class="entry-header"&gt;
+		&lt;?php
+		if ( is_single() ) :
+			the_title( '&lt;h1 class="entry-title"&gt;', '&lt;/h1&gt;' );
+		else :
+			the_title( '&lt;h2 class="entry-title"&gt;&lt;a href="' . esc_url( get_permalink() ) . '" rel="bookmark"&gt;', '&lt;/a&gt;&lt;/h2&gt;' );
+		endif;
+
+		if ( 'post' === get_post_type() ) : ?&gt;
+		&lt;div class="entry-meta"&gt;
+			&lt;?php portfolio_posted_on(); ?&gt;
+		&lt;/div&gt;&lt;!-- .entry-meta --&gt;
+		&lt;?php
+		endif; ?&gt;
+	&lt;/header&gt;&lt;!-- .entry-header --&gt;
+
+	&lt;div class="entry-content"&gt;
+		&lt;?php
+			the_content( sprintf(
+				/* translators: %s: Name of current post. */
+				wp_kses( __( 'Continue reading %s &lt;span class="meta-nav"&gt;&rarr;&lt;/span&gt;', 'portfolio' ), array( 'span' =&gt; array( 'class' =&gt; array() ) ) ),
+				the_title( '&lt;span class="screen-reader-text"&gt;"', '"&lt;/span&gt;', false )
+			) );
+
+			wp_link_pages( array(
+				'before' =&gt; '&lt;div class="page-links"&gt;' . esc_html__( 'Pages:', 'portfolio' ),
+				'after'  =&gt; '&lt;/div&gt;',
+			) );
+		?&gt;
+	&lt;/div&gt;&lt;!-- .entry-content --&gt;
+
+	&lt;footer class="entry-footer"&gt;
+		&lt;?php portfolio_entry_footer(); ?&gt;
+	&lt;/footer&gt;&lt;!-- .entry-footer --&gt;
+&lt;/article&gt;&lt;!-- #post-## --&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>The template uses a few WordPress functions to add content:</p>
+	<pre><code>if ( is_single() ) :
+	the_title( '&lt;h1 class="entry-title"&gt;', '&lt;/h1&gt;' );
+else :
+	the_title( '&lt;h2 class="entry-title"&gt;&lt;a href="' . esc_url( get_permalink() ) . '" rel="bookmark"&gt;', '&lt;/a&gt;&lt;/h2&gt;' );
+endif;</code></pre>
+	<p>This adds the page title in an <code>&lt;h1&gt;</code> or an <code>&lt;h2&gt;</code> depending on if it is a single post or note.</p>
+	<pre><code>the_content();</code></pre>
+	<p>This loads the main post content.</p>
+</div>
+
+<div class="slide">
+	<p>There are other functions that load in different parts of the post information:</p>
+	<pre><code>// loads the data
+&lt;?php portfolio_posted_on(); ?&gt;
+// loads footer with comments and categories
+&lt;?php portfolio_entry_footer(); ?&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>Some of these functions are references in the <code>inc/template-tags.php</code> file, where we can see how everything is being generated.  We don't need to change these functions, we can just use the line in the template to add or remove them.
+</div>
+
+<div class="slide">
+	<p><code>single.php</code> is used to layout single post pages.  This takes the main content of the post in full and display it as a single page.  It also adds extra features like comments and other links.  Some of these features we may not need.  We can also add new parts to the template.</p>
+</div>
