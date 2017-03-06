@@ -61,6 +61,10 @@ dek: MMP 460 Class schedule, with notes and assignments
 - [WordPress Loop, page & single](week5/loop.html)
 - [WordPress Codex](https://codex.wordpress.org/)
 
+## Week 6
+- [WordPress archive](week6/)
+- [WordPress front page](week6/wp.html)
+
 <!-- 
 https://github.com/owenroberts/gitclass
 https://education.github.com/git-cheat-sheet-education.pdf

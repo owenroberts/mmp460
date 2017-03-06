@@ -1,0 +1,66 @@
+---
+layout: slides
+title: MMP 460 - Week 6
+dek: WordPress front page
+---
+
+<div class="slide">
+	<h1>WordPress front page</h1>
+	<p><a href="{{site.github.url}}/">MMP 460</a> > <a href="{{site.github.url}}/schedule.html#week-6">Week 6</a></p>
+</div>
+
+<div class="slide">
+	<p>Most of your portfolio designs require a homepage, either with a large image, some information or other design elements.  Currently our sites all open up to blog posts.  We can use front-page.php to create a separate page to appear at the index of the site.</p>
+	<p>This part is a little more complicated, because you can use different templates depending on what you want your front page to look like.</p>
+</div>
+
+<div class="slide">
+	<p>In all cases, we need to createa a new template called <code>front-page.php</code> and set the blog to load it as the front page.</p>
+	<p>First, using the Dashboard, create a page called <code>Front Page</code> and a Page called <code>Blog</code>. Front Page will be the splash page of the portfolio, and blog will be the new page to display posts.  We can leave them blank at first.</p>
+	<img src="wp/pages.png" alt="">
+</div>
+
+<div class="slide">
+	<p>Next go to <note>Settings > Reading</note> and set the front page and posts page to Front Page and Blog.</p>
+	<img src="wp/settings.png" alt="">
+	<img src="wp/frontpage.png" alt="">
+</div>
+
+<div class="slide">
+	<p>Now you're blog will load the template from <code>front-page.php</code> instead of the default <code>page.php</code> template.</p>
+	<p>Here's where we need to make a choice:</p>
+	<p>If your front page design has an intro/bio and some basic information, <a href="http://kerem.co/" target="blank">like this example</a>, you should make a template based on <code>page.php</code>.</p>
+	<p>If your front page is a grid with examples of your work, <a href="http://mokafolio.de/" target="blank">like this example</a>, you should use <code>archive.php</code> as your template.</p>
+</div>
+
+<div class="slide">
+	<h2>Intro front page</h2>
+	<p>If you chose the first one, follow from here.</p>
+	<p>Duplicate <code>page.php</code> and name it <code>front-page.php</code>.</p>
+	<p>You may want to remove parts of the template like <code>get_sidebar();</code> or the comments section.</p>
+	<p>Other than that, your Front Page content will appear here and you can use the <code>.home</code> selector to style the content.</p>
+</div>
+
+<div class="slide">
+	<h2>Grid front page</h2>
+	<p>If you chose the second choice, follow from here.</p>
+	<p>Duplicate <code>archive.php</code> and name it <code>front-page.php</code>.</p>
+	<p>We can remove parts that are specific to the archive/category page like <code>single_cat_title( '&lt;h1 class="page-title"&gt;', '&lt;/h1&gt;' );</code>.</p>
+	<p>We also need to crate a <code>Front Page</code> category and assign it to any posts you want to appear on the front page.</p>
+</div>
+
+<div class="slide">
+	<img src="wp/addcategory.png" alt="">
+</div>
+
+<div class="slide"><img src="wp/updateposts.png" alt=""></div>
+
+<div class="slide">
+	<p>Now we need to modify the WordPress loop to load the <code>Font Page</code> tagged posts.</p>
+	<pre><code>$category = new WP_Query( array('category-name'=>'Front Page') );
+while ( $category->have_posts() ) : $category->the_post();</code></pre>
+</div>
+
+<div class="slide">
+	<p>Now you can dynamically update the posts that appear on your portfolio without adding or writing any code at all.</p>
+</div>

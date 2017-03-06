@@ -1,0 +1,55 @@
+---
+layout: slides
+title: MMP 460 - Week 6
+dek: WordPress single post
+---
+
+<div class="slide">
+	<h1>WordPress archive/category page</h1>
+	<p><a href="{{site.github.url}}/">MMP 460</a> > <a href="{{site.github.url}}/schedule.html#week-6">Week 6</a></p>
+</div>
+
+<div class="slide">
+	<p>Archive pages in WordPress are used to show all of the pages in a particular category, time period, tag or other distinction.  Since we have already created categories in our blog such as <code>Design</code> and <code>Code</code>, we can use <code>archive.php</code> to layout the category page.</p>
+	<p>The template for a category page doesn't exist yet, so we're going to write it ourselves.  Don't worry, it's simple, we can get most of the components we need from other sources.</p>
+</div>
+
+<div class="slide">
+	<p>Let's look at the header section of the archive page:</p>
+	<pre><code>&lt;header class="page-header"&gt;
+	&lt;?php
+		the_archive_title( '&lt;h1 class="page-title"&gt;', '&lt;/h1&gt;' );
+		the_archive_description( '&lt;div class="archive-description"&gt;', '&lt;/div&gt;' );
+	?&gt;
+&lt;/header&gt;&lt;!-- .page-header --&gt;</code></pre>
+	<p>I don't really need to see the word "Category", so let's replace <code>the_archive_title</code> with <code>single_cat_title</code>.</p>
+</div>
+
+<div class="slide">
+	<p>We can get rid of the content template.  We're going to use a thumbnail instead.</p>
+	<pre><code>get_template_part( 'template-parts/content-search', get_post_format() );</code></pre>
+</div>
+
+<div class="slide">
+	<p>We do need the title of the post with a link, so let's grab that from the <code>template/content.php</code>:</p>
+	<pre><code>the_title( '&lt;h2 class="entry-title"&gt;&lt;a href="' . esc_url( get_permalink() ) . '" rel="bookmark"&gt;', '&lt;/a&gt;&lt;/h2&gt;' );</code></pre>
+</div>
+
+<div class="slide">
+	<p>To get a thumbnail for the post, first we need to set the featured image, then we can use the function <code>the_post_thumbnail();</code>.</p>
+	<img src="wp/featuredimage.png" alt="">
+	<p>The featured image is not part of the main post content, so it can be an image from the post or something else.</p>
+</div>
+
+<div class="slide">
+	<p>Our theme supports post thumbnails, but it doesn't set the size.  We can do this in <code>functions.php</code> on line 43 where we see the first line for thumbnail support:</p>
+	<pre><code class="php">add_theme_support( 'post-thumbnails' );
+// add support for different sizes:
+add_image_size('thumb', 200, 200, true);
+add_image_size('feature', 960, 9999, false);</code></pre>
+</div>
+
+<div class="slide">
+	<p>Now we can add an argument to <code>the_post_thumbnail();</code> in the <code>archive.php</code> template:</p>
+	<pre><code>the_post_thumbnail('thumb');</code></pre>
+</div>
