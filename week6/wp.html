@@ -57,7 +57,7 @@ dek: WordPress front page
 
 <div class="slide">
 	<p>Now we need to modify the WordPress loop to load the <code>Font Page</code> tagged posts.</p>
-	<pre><code>$category = new WP_Query( array('category-name'=>'Front Page') );
+	<pre><code>$category = new WP_Query( array('category_name'=>'Front Page') );
 while ( $category->have_posts() ) : $category->the_post();</code></pre>
 </div>
 
