@@ -1,0 +1,65 @@
+---
+layout: slides
+title: MMP 460 - Week 7
+dek: WordPress sidebar and footer
+---
+
+<div class="slide">
+	<h1>WordPress archive/category page</h1>
+	<p><a href="{{site.github.url}}/">MMP 460</a> > <a href="{{site.github.url}}/schedule.html#week-7">Week 7</a></p>
+</div>
+
+<div class="slide">
+	<p>We only have two more template pages to cover: <code>sidebar.php</code> and <code>footer.php</code>.  There's not a lot we have to do with these templates but we should go over how they work.</p>
+</div>
+
+<div class="slide">
+	<h2>Sidebar</h2>
+	<p>The page, archive and single templates all include a function that loads the sidebar: <code>get_sidebar();</code>.  The sidebar is a section of the site where we can add different types of content.  Elements such as Menus, Categories, Calendar, Archives, Search, Social Media and many others can be dragged into the dynamic sidebar.  These modules are called Widgets and can be found in the Dashboard under the <note>Appearance > Widgets</note> menu.</p>
+</div>
+
+<div class="slide"><img src="wp/sidebar.png" alt=""></div>
+
+<div class="slide">
+	<p>The <code>sidebar.php</code> template has one simple section that loads the dynamic sidebar.  The _s theme template has support for one sidebar, but more can be added in the <code>functions.php</code> template if needed.  <a href="https://codex.wordpress.org/Sidebars" target="blank">More info on Sidebars</a>.</p>
+	<pre><code>&lt;aside id="secondary" class="widget-area" role="complementary"&gt;
+	&lt;?php dynamic_sidebar( 'sidebar-1' ); ?&gt;
+&lt;/aside&gt;&lt;!-- #secondary --&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>So, for example, if I want to have a search bar for my website, I can add a search section to my Sidebar.</p>
+	<img src="wp/search.png" alt="">
+</div>
+
+<div class="slide">
+	<p>This will appear in the secondary section of my theme, which defaults to appear after the main content.  I can use this section to add styles or I could rearrange the order if I want it to appear somewhere else in the portfolio.</p>
+	<img src="wp/secondary.png" alt="">
+</div>
+
+<div class="slide">
+	<h2>Footer</h2>
+	<p>By default in the _s theme, the footer closes the outer wrap and content wrap and adds some more WordPress stuff into the bottom of the page.  We need to leave that stuff in, but we don't necessarily need the default content that reads <note>Proudly powered by WordPress | Theme: portfolio by Underscores.me.</note>.  That is easy enough to remove from the template code.</p>
+</div>
+
+<div class="slide">
+	<pre><code>&lt;/div&gt;&lt;!-- #content --&gt;
+
+	&lt;footer id="colophon" class="site-footer" role="contentinfo"&gt;
+		&lt;div class="site-info"&gt;
+			&lt;a href="&lt;?php echo esc_url( __( 'https://wordpress.org/', 'portfolio' ) ); ?&gt;"&gt;&lt;?php printf( esc_html__( 'Proudly powered by %s', 'portfolio' ), 'WordPress' ); ?&gt;&lt;/a&gt;
+			&lt;span class="sep"&gt; | &lt;/span&gt;
+			&lt;?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'portfolio' ), 'portfolio', '&lt;a href="https://automattic.com/" rel="designer"&gt;Underscores.me&lt;/a&gt;' ); ?&gt;
+		&lt;/div&gt;&lt;!-- .site-info --&gt;
+	&lt;/footer&gt;&lt;!-- #colophon --&gt;
+&lt;/div&gt;&lt;!-- #page --&gt;
+
+&lt;?php wp_footer(); ?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+<div class="slide">
+	<p>To add info for you footer, replace the <code>.site-info</code> section.  You could use the menu code from <code>header.php</code> with a new menu to add a footer menu, or you add copyright info, social media links or anything else needed</p>
+</div>

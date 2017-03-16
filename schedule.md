@@ -64,6 +64,11 @@ dek: MMP 460 Class schedule, with notes and assignments
 ## Week 6
 - [WordPress archive](week6/)
 - [WordPress front page](week6/wp.html)
+- [Export/import WordPress content](week6/export)
+
+## Week 7
+- [WordPress sidebar and footer](week7/)
+- Midterm workshop
 
 <!-- 
 https://github.com/owenroberts/gitclass
