@@ -64,7 +64,8 @@ dek: MMP 460 Class schedule, with notes and assignments
 ## Week 6
 - [WordPress archive](week6/)
 - [WordPress front page](week6/wp.html)
-- [Export/import WordPress content](week6/export)
+- [Export/import WordPress content](week6/export.html)
+- [Setup Cloud 9 IDE](week6/c9.html)
 
 ## Week 7
 - [WordPress sidebar and footer](week7/)
