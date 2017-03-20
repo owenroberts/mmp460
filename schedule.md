@@ -70,6 +70,8 @@ dek: MMP 460 Class schedule, with notes and assignments
 ## Week 7
 - [WordPress sidebar and footer](week7/)
 - Midterm workshop
+- [Team roles breakdown](week7/roles.html)
+- Fill out group project survey
 
 <!-- 
 https://github.com/owenroberts/gitclass
