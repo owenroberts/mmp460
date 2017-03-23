@@ -73,6 +73,12 @@ dek: MMP 460 Class schedule, with notes and assignments
 - [Team roles breakdown](week7/roles.html)
 - Fill out group project survey
 
+## Week 8
+- Present Midterms
+- [Groups Spring 2017](week8/groups.html)
+- [In class: First group meeting](week8/inclass.html)
+
+
 <!-- 
 https://github.com/owenroberts/gitclass
 https://education.github.com/git-cheat-sheet-education.pdf
