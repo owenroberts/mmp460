@@ -78,6 +78,10 @@ dek: MMP 460 Class schedule, with notes and assignments
 - [Groups Spring 2017](week8/groups.html)
 - [In class: First group meeting](week8/inclass.html)
 
+## Week 9
+- Presentation from client Games Ghost
+- [Weekly Reports](week9/weeklyreports.html)
+- Groups outline  
 
 <!-- 
 https://github.com/owenroberts/gitclass
