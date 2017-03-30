@@ -81,7 +81,7 @@ dek: MMP 460 Class schedule, with notes and assignments
 ## Week 9
 - Presentation from client Games Ghost
 - [Weekly Reports](week9/weeklyreports.html)
-- Groups outline  
+- [Wireframe, prototype, mockup](https://designmodo.com/wireframing-prototyping-mockuping/)
 
 <!-- 
 https://github.com/owenroberts/gitclass
