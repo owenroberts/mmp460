@@ -89,7 +89,8 @@ dek: MMP 460 Class schedule, with notes and assignments
 
 ## Week 10
 - [Prototyping with Foundation](http://foundation.zurb.com/sites/docs/)
-
+- [Foundation Class Example](week10/)
+	- [Download zip](week10/foundation-example.zip)
 <!-- 
 https://github.com/owenroberts/gitclass
 https://education.github.com/git-cheat-sheet-education.pdf
