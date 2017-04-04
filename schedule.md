@@ -82,9 +82,14 @@ dek: MMP 460 Class schedule, with notes and assignments
 - Presentation from client Games Ghost
 - [Weekly Reports](week9/weeklyreports.html)
 - [Wireframe, prototype, mockup](https://designmodo.com/wireframing-prototyping-mockuping/)
+- Final Project
+	- Prototype/Mockup due April 27
+	- Rough draft due May 11
+	- Final due May 25
 
 ## Week 10
 - [Prototyping with Foundation](http://foundation.zurb.com/sites/docs/)
+
 <!-- 
 https://github.com/owenroberts/gitclass
 https://education.github.com/git-cheat-sheet-education.pdf
