@@ -89,6 +89,7 @@ dek: MMP 460 Class schedule, with notes and assignments
 
 ## Week 10
 - [Prototyping with Foundation](http://foundation.zurb.com/sites/docs/)
+- [Reverie](http://themefortress.com/reverie/) built with Foundation
 - [Foundation Class Example](week10/foundation-example/)
 	- [Download zip](week10/foundation-example.zip)
 - [Final requirements](week10/final.html)
