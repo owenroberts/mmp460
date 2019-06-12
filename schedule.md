@@ -81,7 +81,18 @@ dek: MMP 460 Class schedule, with notes and assignments
 ## Week 9
 - Presentation from client Games Ghost
 - [Weekly Reports](week9/weeklyreports.html)
-- Groups outline  
+- [Wireframe, prototype, mockup](https://designmodo.com/wireframing-prototyping-mockuping/)
+- Final Project
+	- Prototype/Mockup due April 27
+	- Rough draft due May 11
+	- Final due May 25
+
+## Week 10
+- [Prototyping with Foundation](http://foundation.zurb.com/sites/docs/)
+- [Reverie](http://themefortress.com/reverie/) built with Foundation
+- [Foundation Class Example](week10/foundation-example/)
+	- [Download zip](week10/foundation-example.zip)
+- [Final requirements](week10/final.html)
 
 <!-- 
 https://github.com/owenroberts/gitclass
